@@ -1,9 +1,9 @@
-package com.lucario.eventsdemo;
+package io.reflectoring.eventsdemo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.lucario.eventsdemo.listeners.SpringBuiltInEventsListener;
+import io.reflectoring.eventsdemo.listeners.SpringBuiltInEventsListener;
 
 @SpringBootApplication
 public class EventsDemoApplication {

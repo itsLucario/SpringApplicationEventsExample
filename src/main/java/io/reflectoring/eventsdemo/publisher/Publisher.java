@@ -1,10 +1,10 @@
-package com.lucario.eventsdemo.publisher;
+package io.reflectoring.eventsdemo.publisher;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Component;
 
-import com.lucario.eventsdemo.events.UserCreatedEvent;
+import io.reflectoring.eventsdemo.events.UserCreatedEvent;
 
 @Component
 public class Publisher {

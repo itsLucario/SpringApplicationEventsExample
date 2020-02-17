@@ -1,4 +1,4 @@
-package com.lucario.eventsdemo.events;
+package io.reflectoring.eventsdemo.events;
 
 import org.springframework.context.ApplicationEvent;
 
