@@ -1,13 +1,11 @@
-package io.reflectoring.eventsdemo.listeners;
+package io.reflectoring.eventsdemo;
 
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
 
-import io.reflectoring.eventsdemo.events.UserCreatedEvent;
-
 @Component
-public class UserCreatedListener implements ApplicationListener<UserCreatedEvent> {
+class UserCreatedListener implements ApplicationListener<UserCreatedEvent> {
 
 	@EventListener
 	public void handleUserCreatedEvent(UserCreatedEvent event) {

@@ -1,18 +1,18 @@
-package io.reflectoring.eventsdemo.events;
+package io.reflectoring.eventsdemo;
 
 import org.springframework.context.ApplicationEvent;
 
-public class UserCreatedEvent extends ApplicationEvent {
+class UserCreatedEvent extends ApplicationEvent {
 
 	private static final long serialVersionUID = 1L;
 	private String name;
 
-	public UserCreatedEvent(String name) {
+	UserCreatedEvent(String name) {
 		super(name);
 		this.name = name;
 	}
 
-	public String getName() {
+	String getName() {
 		return this.name;
 	}
 
