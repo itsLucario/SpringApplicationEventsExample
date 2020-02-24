@@ -7,8 +7,8 @@ class UserCreatedEvent extends ApplicationEvent {
 	private static final long serialVersionUID = 1L;
 	private String name;
 
-	UserCreatedEvent(String name) {
-		super(name);
+	UserCreatedEvent(Object source, String name) {
+		super(source);
 		this.name = name;
 	}
 

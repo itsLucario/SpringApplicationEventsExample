@@ -26,7 +26,7 @@ class SpringBuiltInEventsListener implements ApplicationListener<SpringApplicati
 	
 	private void initPublisher(SpringApplicationEvent event) {
 		if(event instanceof ApplicationReadyEvent) {
-			this.applicationContext.getBean(Publisher.class).publishEvent("Lucario");
+			this.applicationContext.getBean(Publisher.class).publishEvent();
 		}
 	}
 }

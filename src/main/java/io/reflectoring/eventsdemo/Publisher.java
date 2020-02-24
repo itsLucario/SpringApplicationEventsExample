@@ -10,7 +10,18 @@ class Publisher {
 	@Autowired
 	private ApplicationEventPublisher publisher;
 
-	void publishEvent(final String name) {
-	    publisher.publishEvent(new UserCreatedEvent(name));
+	void publishEvent() {
+		// Async Event		
+		publisher.publishEvent("I'm Async");
+		
+		
+		// @EventListener Annotated and ApplicationListener			
+	    publisher.publishEvent(new UserCreatedEvent(this, "Lucario"));
+	    publisher.publishEvent(new UserRemovedEvent("Lucario"));
+	    
+	    // Conditional Listener	    
+	    publisher.publishEvent(new UserCreatedEvent(this, "reflectoring"));
+	    publisher.publishEvent(new UserRemovedEvent("reflectoring"));
+	    
 	}
 }
